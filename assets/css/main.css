@@ -2006,7 +2006,7 @@ input[type=checkbox].w3-check:disabled + .w3-validate, input[type=radio].w3-radi
 
 .about {
   background: lightblue; }
-  .about p {
+  .about h1 {
     margin: 0; }
   .about .wrap-about {
     display: -ms-flexbox;
@@ -2017,10 +2017,64 @@ input[type=checkbox].w3-check:disabled + .w3-validate, input[type=radio].w3-radi
         align-items: center;
     margin: 0;
     position: relative; }
-    .about .wrap-about button {
-      position: absolute;
-      right: 0;
-      bottom: 0; }
+
+.btn {
+  position: absolute;
+  right: 0;
+  bottom: 0; }
+
+.product {
+  background: honeydew;
+  position: relative; }
+  .product h1 {
+    margin: 0; }
+  .product ul {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0; }
+    .product ul li {
+      width: 50%; }
+
+.schedule {
+  background: grey; }
+  .schedule h1 {
+    margin: 0; }
+  .schedule .wrap-about {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
+    margin: 0;
+    position: relative; }
+
+.contact h1 {
+  margin: 0; }
+
+.contact form {
+  position: relative; }
+
+footer {
+  background: yellow; }
+  footer h1 {
+    margin: 0; }
+  footer .wrap-about {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
+    margin: 0;
+    position: relative; }
+  footer .webmaster {
+    background: black;
+    color: white; }
 
 .home-wrap {
   display: block;
