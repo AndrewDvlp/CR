@@ -2005,9 +2005,8 @@ input[type=checkbox].w3-check:disabled + .w3-validate, input[type=radio].w3-radi
   height: 2000px; }
 
 .about {
-  background: lightblue; }
-  .about h1 {
-    margin: 0; }
+  background: lightblue;
+  display: block; }
   .about .wrap-about {
     display: -ms-flexbox;
     display: flex;
@@ -2017,11 +2016,6 @@ input[type=checkbox].w3-check:disabled + .w3-validate, input[type=radio].w3-radi
         align-items: center;
     margin: 0;
     position: relative; }
-
-.btn {
-  position: absolute;
-  right: 0;
-  bottom: 0; }
 
 .product {
   background: honeydew;
@@ -2082,3 +2076,38 @@ footer {
   background: green;
   margin: 0 auto;
   position: relative; }
+
+.wrapper-titles {
+  overflow: hidden;
+  text-align: center; }
+  .wrapper-titles h1 {
+    display: inline-block;
+    padding: 0 15px;
+    position: relative; }
+  .wrapper-titles h1:before,
+  .wrapper-titles h1:after {
+    content: "";
+    display: block;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    width: 400%; }
+  .wrapper-titles h1:before {
+    right: 100%;
+    margin-right: 15px; }
+  .wrapper-titles h1:after {
+    left: 100%;
+    margin-left: 15px; }
+
+.wrapper-title-white h1:before,
+.wrapper-title-white h1:after {
+  background-color: white; }
+
+.wrapper-title-black h1:before,
+.wrapper-title-black h1:after {
+  background-color: black; }
+
+.btn {
+  position: absolute;
+  right: 0;
+  bottom: 0; }
