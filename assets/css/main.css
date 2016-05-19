@@ -1995,8 +1995,32 @@ input[type=checkbox].w3-check:disabled + .w3-validate, input[type=radio].w3-radi
     padding: 0;
     list-style-type: none; }
 
+.annoucement {
+  background: red;
+  margin: 0 -10px; }
+  .annoucement p {
+    margin: 0; }
+
 .scroll {
   height: 2000px; }
+
+.about {
+  background: lightblue; }
+  .about p {
+    margin: 0; }
+  .about .wrap-about {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
+    margin: 0;
+    position: relative; }
+    .about .wrap-about button {
+      position: absolute;
+      right: 0;
+      bottom: 0; }
 
 .home-wrap {
   display: block;
