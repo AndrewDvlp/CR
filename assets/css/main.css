@@ -637,9 +637,6 @@ hr {
   border-top: 1px solid #eee;
   margin: 20px 0; }
 
-img {
-  margin-bottom: -5px; }
-
 a {
   color: inherit; }
 
@@ -1983,16 +1980,20 @@ input[type=checkbox].w3-check:disabled + .w3-validate, input[type=radio].w3-radi
   right: 0; }
 
 .menu {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
   background: pink; }
   .menu img {
     height: 100%;
     margin: 0; }
   .menu ul {
-    margin: 100px 0 0 0; }
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
+    margin: 0 50px;
+    padding: 0;
+    list-style-type: none; }
 
 .scroll {
   height: 2000px; }
