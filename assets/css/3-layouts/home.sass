@@ -6,7 +6,7 @@
   position: relative
 
 h1
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Dancing Script', cursive
 
 .wrapper-titles
   overflow: hidden
@@ -45,8 +45,52 @@ h1
 
 .btn
   position: absolute
-  right: 0
-  bottom: 0
+  right:  5px
+  bottom: 5px
+  font-family: 'Dancing Script', cursive
+
+  border: none
+  display: inline-block
+  outline: 0
+  padding: 6px 16px
+  vertical-align: middle
+  overflow: hidden
+  text-decoration: none !important
+  color: #ddd
+  background-color: #191919
+  text-align: center
+  cursor: pointer
+  white-space: nowrap
+
+
+.container:after
+  content: ""
+  display: table
+  clear: both
+.container
+  padding: 0.01em 16px
+
+
+.ms-closebtn
+  text-decoration: none
+  float: right
+  font-size: 24px
+  font-weight: bold
+  color: inherit
+  -webkit-transition: background-color .3s,color .15s,box-shadow .3s,opacity 0.3s
+  transition: background-color .3s,color .15s,box-shadow .3s,opacity 0.3s
+  &:hover, &:focus
+    color: #000
+    text-decoration: none
+    cursor: pointer
+
+.ms-white, .ms-hover-white:hover
+  color: #191919 !important
+  background-color: #DDD !important
+
+.ms-black, .ms-hover-black:hover
+  color: #DDD !important
+  background-color: #191919 !important
 //
     @media (max-width: 775px)
       display: block

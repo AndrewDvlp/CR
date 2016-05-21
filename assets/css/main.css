@@ -1974,12 +1974,12 @@ input[type=checkbox].w3-check:disabled + .w3-validate, input[type=radio].w3-radi
 .w3-text-shadow-white {
   text-shadow: 1px 1px 0 #ddd; }
 
-.trophy {
+header .trophy {
   position: absolute;
   height: 100px;
   right: -10px; }
 
-ul.menu {
+header ul.menu {
   background: pink;
   display: -ms-flexbox;
   display: flex;
@@ -1988,16 +1988,16 @@ ul.menu {
   margin: 0 100px;
   padding: 60px 0 0 0;
   list-style-type: none; }
-  ul.menu li {
+  header ul.menu li {
     font-size: 24px;
     font-family: 'Dancing Script', cursive; }
-    ul.menu li img {
+    header ul.menu li img {
       height: 150px;
       margin: -20px 0 -60px 0; }
 
 .annoucement {
   background: red;
-  margin: 0 -10px; }
+  margin: 0 0px; }
   .annoucement p {
     margin: 0; }
 
@@ -2005,8 +2005,9 @@ ul.menu {
   height: 2000px; }
 
 .about {
-  background: lightblue;
-  display: block; }
+  background: #191919;
+  display: block;
+  padding: 40px 0 10px 0; }
   .about .wrap-about {
     display: -ms-flexbox;
     display: flex;
@@ -2014,8 +2015,15 @@ ul.menu {
         justify-content: space-between;
     -ms-flex-align: center;
         align-items: center;
-    margin: 0;
-    position: relative; }
+    margin: 0 10px;
+    position: relative;
+    color: #DDD; }
+    .about .wrap-about .btn {
+      border-color: white;
+      border-style: solid;
+      font-size: 24px; }
+  .about h1 {
+    color: #DDD; }
 
 .product {
   background: honeydew;
@@ -2112,5 +2120,46 @@ h1 {
 
 .btn {
   position: absolute;
-  right: 0;
-  bottom: 0; }
+  right: 5px;
+  bottom: 5px;
+  font-family: 'Dancing Script', cursive;
+  border: none;
+  display: inline-block;
+  outline: 0;
+  padding: 6px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none !important;
+  color: #ddd;
+  background-color: #191919;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap; }
+
+.container:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.container {
+  padding: 0.01em 16px; }
+
+.ms-closebtn {
+  text-decoration: none;
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  color: inherit;
+  transition: background-color .3s,color .15s,box-shadow .3s,opacity 0.3s; }
+  .ms-closebtn:hover, .ms-closebtn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer; }
+
+.ms-white, .ms-hover-white:hover {
+  color: #191919 !important;
+  background-color: #DDD !important; }
+
+.ms-black, .ms-hover-black:hover {
+  color: #DDD !important;
+  background-color: #191919 !important; }
