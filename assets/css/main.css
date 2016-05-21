@@ -1976,24 +1976,24 @@ input[type=checkbox].w3-check:disabled + .w3-validate, input[type=radio].w3-radi
 
 .trophy {
   position: absolute;
-  width: 100px;
-  right: 0; }
+  height: 100px;
+  right: -10px; }
 
-.menu {
-  background: pink; }
-  .menu img {
-    height: 100%;
-    margin: 0; }
-  .menu ul {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    -ms-flex-align: center;
-        align-items: center;
-    margin: 0 50px;
-    padding: 0;
-    list-style-type: none; }
+ul.menu {
+  background: pink;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin: 0 100px;
+  padding: 60px 0 0 0;
+  list-style-type: none; }
+  ul.menu li {
+    font-size: 24px;
+    font-family: 'Dancing Script', cursive; }
+    ul.menu li img {
+      height: 150px;
+      margin: -20px 0 -60px 0; }
 
 .annoucement {
   background: red;
@@ -2072,10 +2072,13 @@ footer {
 
 .home-wrap {
   display: block;
-  max-width: 1200px;
+  max-width: 980px;
   background: green;
   margin: 0 auto;
   position: relative; }
+
+h1 {
+  font-family: 'Dancing Script', cursive; }
 
 .wrapper-titles {
   overflow: hidden;
