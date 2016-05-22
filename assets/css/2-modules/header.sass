@@ -6,24 +6,36 @@ header
 
 
   ul.menu
-    background: #fafafa
-
     display: flex
+    align-items: stretch
     justify-content: space-between
-
+    background: #fafafa
     margin: 0 100px
-    padding: 60px 0 0 0
+    padding: 0
     list-style-type : none
+
     li
+      flex: 1
+      text-align: center
       font-size: 28px
       font-family: 'Dancing Script', cursive
       color: #191919
-
+      padding-top: 60px
 
       img
         height: 150px
         margin: -20px 0 -60px 0
 
+
+    a
+      flex: 1
+      text-decoration: none
+      transition: all 0.2s ease-in-out
+
+      &:hover
+        background-color: #191919
+        li
+          color: #fafafa
 //
   @media (max-width: 768px)
       .home-wrap
