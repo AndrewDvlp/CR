@@ -132,9 +132,9 @@ pre, textarea {
 
 /*End extract from normalize.css */
 html, body {
-  font-family: Verdana,sans-serif;
-  font-size: 15px;
-  line-height: 1.5; }
+  font-family: 'Josefin Slab', Verdana, sans-serif;
+  font-size: 17px;
+  line-height: 1.25; }
 
 html {
   overflow-x: hidden; }
@@ -1522,21 +1522,36 @@ header .trophy {
   right: -10px; }
 
 header ul.menu {
-  background: #fafafa;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-align: stretch;
+      align-items: stretch;
   -ms-flex-pack: justify;
       justify-content: space-between;
+  background: #fafafa;
   margin: 0 100px;
-  padding: 60px 0 0 0;
+  padding: 0;
   list-style-type: none; }
   header ul.menu li {
+    -ms-flex: 1;
+        flex: 1;
+    text-align: center;
     font-size: 28px;
     font-family: 'Dancing Script', cursive;
-    color: #191919; }
+    color: #191919;
+    padding-top: 60px; }
     header ul.menu li img {
       height: 150px;
       margin: -20px 0 -60px 0; }
+  header ul.menu a {
+    -ms-flex: 1;
+        flex: 1;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out; }
+    header ul.menu a:hover {
+      background-color: #191919; }
+      header ul.menu a:hover li {
+        color: #fafafa; }
 
 .annoucement {
   background: red;
