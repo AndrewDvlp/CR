@@ -47,24 +47,37 @@ h1,h2
 
 
 .btn
-  position: absolute
-  right:  5px
-  bottom: 5px
+
+  //text
+  font-size: 24px
+  text-align: center
+  text-decoration: none !important
   font-family: 'Dancing Script', cursive
 
-  border: none
-  display: inline-block
-  outline: 0
+  //size & positionning
+  width: 200px
   padding: 6px 16px
-  vertical-align: middle
-  overflow: hidden
-  text-decoration: none !important
 
-  text-align: center
-  cursor: pointer
   white-space: nowrap
+  display: block
+  float: right
+
+  //boxstyle
+  border: none
+  border-style: solid
+
+  //other
+  cursor: pointer  
   transition: background-color .5s,color .5s
 
+
+
+
+
+.btn-white
+  border-color: $mywhite
+  color: $mywhite
+  background-color: $myblack
 
 .container:after
   content: ""

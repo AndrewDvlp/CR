@@ -1,24 +1,23 @@
-.scroll
-  height: 2000px
-
-
-.about
-  background: #191919
+section.about
+  background: $myblack
   margin: 0 -10px 15px -10px
-  display: block
   padding: 40px 0 10px 0
+  display: block
+
+  color: $mywhite
+
   .wrap-about
+    min-height: 300px
     display: flex
     justify-content: space-between
-    align-items: center
+    //align-items: center
     margin: 0 10px
-    position: relative
-    color: #fafafa
-    .btn
-      border-color: white
-      border-style: solid
-      font-size: 24px
-      color: #fafafa
-      background-color: #191919
-  h1
-    color: #fafafa
+    .ms-card
+      height: 100%
+      margin: 37px 0 0 0
+      .ms-container
+        text-align: center
+    .about-content
+      padding: 20px
+      p
+        text-align: justify

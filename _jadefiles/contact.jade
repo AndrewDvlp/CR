@@ -1,14 +1,15 @@
-.contact(id="contact")
-  .wrapper-titles.wrapper-title-white
+section.contact(id="contact")
+  .wrapper-titles.wrapper-title-black
     h1 Contact us
   form(action="action_page.php")
-    label(for="fname") Email
-    input(type="text", id="fname", name="firstname")
-
-    label(for="fname") Subject
-    input(type="text", id="fname", name="firstname")
-
-    label(for="fname") Your message
-    textarea 
-    
-    input(type="submit", value="login").btn
+    .w3-row-padding
+      .w3-half
+        label(for="email") Email
+        input(type="text", id="fname", name="firstname").w3-input.w3-border
+      .w3-half
+        label(for="email") Email
+        input(type="text", id="fname", name="firstname").w3-input.w3-border
+      textarea
+      input(type="submit", value="Envoyer").btn.ms-hover-white
+        
+        
