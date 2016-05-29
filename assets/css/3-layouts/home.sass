@@ -10,6 +10,8 @@ body
 
 h1,h2
   font-family: 'Dancing Script', cursive
+  margin: 0
+  padding: 0
 
 .wrapper-titles
   overflow: hidden
@@ -27,8 +29,6 @@ h1,h2
     position: absolute
     top: 50%
     width: 400%
-
-
   h1:before
     right: 100%
     margin-right: 15px
@@ -39,11 +39,11 @@ h1,h2
 .wrapper-title-white
   h1:before,
   h1:after
-    background-color: #fafafa
+    background-color: $mywhite
 .wrapper-title-black
   h1:before,
   h1:after
-    background-color: #191919
+    background-color: $myblack
 
 
 .btn
@@ -67,7 +67,7 @@ h1,h2
   border-style: solid
 
   //other
-  cursor: pointer  
+  cursor: pointer
   transition: background-color .5s,color .5s
 
 
@@ -78,6 +78,10 @@ h1,h2
   border-color: $mywhite
   color: $mywhite
   background-color: $myblack
+.btn-black
+  border-color: $myblack
+  color: $myblack
+  background-color: $mywhite
 
 .container:after
   content: ""
@@ -115,6 +119,32 @@ h1,h2
     flex-wrap: wrap
     margin: 0
     padding: 0
+
+
+.black-section
+  background: $myblack
+  color: $mywhite
+
+  margin: 0 -10px
+  margin-bottom: 15px
+  padding: 0
+  display: block
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important
+
+.white-section
+    background: $mywhite
+    color: $myblack
+
+    display: block
+    position: relative
+    margin: 0
+    margin-bottom: 15px
+    padding: 0
+
+.clear
+  clear: both
+
 //
     @media (max-width: 775px)
       display: block

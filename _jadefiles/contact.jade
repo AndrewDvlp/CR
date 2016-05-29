@@ -1,7 +1,7 @@
-section.contact(id="contact")
+section.contact.white-section(id="contact")
   .wrapper-titles.wrapper-title-black
-    h1 Contact us
-  form(action="action_page.php")
+    h1 Contactez nous
+  form(action="action_page.php").ms-container
     .w3-row-padding
       .w3-half
         label(for="email") Email
@@ -9,7 +9,10 @@ section.contact(id="contact")
       .w3-half
         label(for="email") Email
         input(type="text", id="fname", name="firstname").w3-input.w3-border
-      textarea
-      input(type="submit", value="Envoyer").btn.ms-hover-white
+    .w3-row-padding
+      .ms-full
+        label(for="email") Email
+        textarea.w3-input.w3-border
+      .btn.btn-black.ms-hover-black Envoyer >>
         
         

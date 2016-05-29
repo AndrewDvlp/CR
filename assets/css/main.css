@@ -1561,142 +1561,119 @@ header ul.menu {
     margin: 0; }
 
 section.about {
-  background: #191919;
-  margin: 0 -10px 15px -10px;
-  padding: 40px 0 10px 0;
-  display: block;
-  color: #fafafa; }
+  padding-top: 50px; }
   section.about .wrap-about {
-    min-height: 300px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    margin: 0 10px; }
-    section.about .wrap-about .ms-card {
+    text-align: justify;
+    padding: 20px; }
+    section.about .wrap-about .illustration {
+      margin: 20px;
+      float: left;
+      text-align: center;
+      height: 100%; }
+      @media (max-width: 640px) {
+        section.about .wrap-about .illustration {
+          float: none; } }
+
+section.product ul {
+  margin: 30px 0 0 0;
+  padding: 0; }
+  section.product ul li {
+    width: 50%;
+    height: 230px;
+    padding: 25px;
+    float: left;
+    list-style-type: none;
+    background-color: #fafafa;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: color 0.5s, background-color 0.5s, padding 0.5s; }
+    section.product ul li .box {
+      width: 100%;
       height: 100%;
-      margin: 37px 0 0 0; }
-      section.about .wrap-about .ms-card .ms-container {
-        text-align: center; }
-    section.about .wrap-about .about-content {
-      padding: 20px; }
-      section.about .wrap-about .about-content p {
-        text-align: justify; }
-
-.product {
-  background: #fafafa;
-  position: relative;
-  padding: 10px 0 10px 0; }
-  .product h1 {
-    margin: 0;
-    color: #191919; }
-  .product ul {
-    margin: 30px 0 0 0; }
-    .product ul li {
-      width: 50%;
-      height: 230px;
-      padding: 25px;
-      display: inline-block;
-      outline: 0;
-      vertical-align: middle;
-      overflow: hidden;
-      text-decoration: none !important;
-      color: #191919;
-      background-color: #fafafa;
-      cursor: pointer;
-      white-space: nowrap;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-direction: column;
-          flex-direction: column;
-      -ms-flex-pack: center;
-          justify-content: center;
-      transition: color 0.5s, background-color 0.5s, padding 0.5s; }
-      .product ul li .box {
-        width: 100%;
-        height: 100%;
-        border: 1px solid #191919;
-        padding: 15px;
-        margin: auto;
-        transition: -webkit-transform 0.5s, border 0.5s;
-        transition: transform 0.5s, border 0.5s; }
-      .product ul li img {
-        opacity: 0.7;
-        float: left;
-        height: 100%; }
-    .product ul li:hover {
-      color: #fafafa;
-      background-color: #191919;
-      padding: 10px; }
-      .product ul li:hover .box {
-        border: 1px solid #fafafa; }
-  .product .btn {
-    border-color: #191919;
-    border-style: solid;
-    font-size: 24px;
-    color: #191919;
-    background-color: #fafafa; }
-
-.schedule {
-  background: #191919;
-  margin: 0 -10px 15px -10px;
-  padding: 25px 0 0 0; }
-  .schedule h1 {
-    margin: 0;
-    color: #fafafa; }
-  .schedule .wrap-about {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    -ms-flex-align: center;
-        align-items: center;
-    margin: 0;
-    position: relative;
+      border: 1px solid #191919;
+      padding: 15px;
+      margin: auto;
+      transition: -webkit-transform 0.5s, border 0.5s;
+      transition: transform 0.5s, border 0.5s;
+      transition-timing-function: ease-in-out; }
+    section.product ul li img {
+      opacity: 0.7;
+      float: left;
+      height: 100%; }
+  section.product ul li:hover {
     color: #fafafa;
-    height: 440px; }
-    .schedule .wrap-about .map {
-      padding: 20px;
-      width: 50%; }
-    .schedule .wrap-about .horaires {
-      width: 50%;
-      padding: 45px;
-      border-right: solid #fafafa;
-      height: 80%;
-      font: "Dancing Script", cursive;
-      text-align: center; }
-      .schedule .wrap-about .horaires ul {
-        list-style-type: none;
-        margin: 30px 0 0 0;
-        float: center;
-        position: relative; }
-        .schedule .wrap-about .horaires ul li span.col1 {
-          text-align: left;
-          float: left;
-          width: 10em; }
+    background-color: #191919;
+    padding: 10px; }
+    section.product ul li:hover .box {
+      border: 1px solid #fafafa; }
 
-section.contact h1 {
+section.product .btn {
+  margin: 20px; }
+
+.schedule h1 {
   margin: 0; }
 
-section.contact form {
-  position: relative; }
+.schedule .wrap-about {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  margin: 0;
+  position: relative;
+  height: 440px; }
+  .schedule .wrap-about .map {
+    padding: 20px;
+    width: 50%; }
+  .schedule .wrap-about .horaires {
+    width: 50%;
+    padding: 45px;
+    border-right: solid #fafafa;
+    height: 80%;
+    font: "Dancing Script", cursive;
+    text-align: center; }
+    .schedule .wrap-about .horaires ul {
+      list-style-type: none;
+      margin: 30px 0 0 0;
+      float: center;
+      position: relative; }
+      .schedule .wrap-about .horaires ul li span.col1 {
+        text-align: left;
+        float: left;
+        width: 10em; }
 
-footer {
-  background: yellow; }
-  footer h1 {
-    margin: 0; }
-  footer .wrap-about {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    -ms-flex-align: center;
-        align-items: center;
-    margin: 0;
-    position: relative; }
-  footer .webmaster {
-    background: black;
-    color: white; }
+section.contact form .ms-full {
+  padding: 8px; }
+
+footer h1 {
+  margin: 0; }
+
+footer .wrap-about p {
+  width: 33%;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+
+footer .webmaster {
+  background: black;
+  color: white; }
+
+.containertest {
+  position: relative;
+  text-align: center; }
+  .containertest h1 {
+    background-color: pink;
+    margin: -20px 0 0 0; }
+  .containertest .line {
+    width: 100%;
+    height: 1px;
+    background-color: #191919;
+    display: inline-block;
+    content: "";
+    left: 0;
+    margin: 10px 0 0 0; }
 
 body {
   background: #ddd; }
@@ -1709,7 +1686,9 @@ body {
   position: relative; }
 
 h1, h2 {
-  font-family: 'Dancing Script', cursive; }
+  font-family: 'Dancing Script', cursive;
+  margin: 0;
+  padding: 0; }
 
 .wrapper-titles {
   overflow: hidden;
@@ -1761,6 +1740,11 @@ h1, h2 {
   color: #fafafa;
   background-color: #191919; }
 
+.btn-black {
+  border-color: #191919;
+  color: #191919;
+  background-color: #fafafa; }
+
 .container:after {
   content: "";
   display: table;
@@ -1798,3 +1782,24 @@ h1, h2 {
       flex-wrap: wrap;
   margin: 0;
   padding: 0; }
+
+.black-section {
+  background: #191919;
+  color: #fafafa;
+  margin: 0 -10px;
+  margin-bottom: 15px;
+  padding: 0;
+  display: block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important; }
+
+.white-section {
+  background: #fafafa;
+  color: #191919;
+  display: block;
+  position: relative;
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0; }
+
+.clear {
+  clear: both; }

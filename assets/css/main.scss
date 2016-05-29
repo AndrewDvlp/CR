@@ -1,4 +1,4 @@
-//@import "0-tools/bourbon/bourbon";
+@import "0-tools/bourbon/bourbon";
 //@import "0-tools/normalize";
 
 @import "1-base/vars";
@@ -12,5 +12,6 @@
 @import "2-modules/schedule";
 @import "2-modules/contact";
 @import "2-modules/footer";
+@import "2-modules/test";
 
 @import "3-layouts/home";
