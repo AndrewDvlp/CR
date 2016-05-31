@@ -7,16 +7,19 @@ section.product
       width: 50%
       height: 230px
       padding: 25px
-
-      float: left
+      margin-top: 0px
 
       list-style-type: none
 
       background-color: $mywhite
       cursor: pointer
-      white-space: nowrap
+      display: inline-block
+      vertical-align: top
+
 
       transition: color 0.5s, background-color 0.5s, padding 0.5s
+      @media (max-width: 768px)
+        width: 100%
 
       .box
         width: 100%
@@ -26,18 +29,30 @@ section.product
         padding: 15px
         margin: auto
 
+
+
+
         transition: transform 0.5s, border 0.5s
         transition-timing-function: ease-in-out
+
+        .content
+          text-align: center
+          height: 100%
+          padding-top: 40px
+
 
       img
         opacity: 0.7
         float: left
         height: 100%
+        //max-width: 50%
+
 
     li:hover
       color: $mywhite
       background-color: $myblack
-      padding: 10px
+      padding: 35px
+
       .box
         border: 1px solid $mywhite
 
